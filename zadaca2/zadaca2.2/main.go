@@ -18,11 +18,11 @@ type Osoba struct {
 }
 
 func (p Osoba) ispišiPodatke() {
-	fmt.Printf("%s, %d godina, živi u %s %s", p.ime, p.godine, p.adresa.grad, p.adresa.ulica)
+	fmt.Printf("%s, %d godina, živi u %s, %s.", p.ime, p.godine, p.adresa.grad, p.adresa.ulica)
 }
 
 func main() {
-	Osoba := Osoba{
+	osoba := Osoba{
 		ime:    "Marko Marković",
 		godine: 25,
 		adresa: Adresa{
@@ -31,5 +31,5 @@ func main() {
 		},
 	}
 
-	Osoba.ispišiPodatke()
+	osoba.ispišiPodatke()
 }
